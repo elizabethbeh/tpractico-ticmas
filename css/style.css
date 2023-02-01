@@ -2,52 +2,59 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --xlg: 24px;
+}
 body{
-    background: #FFAFBD;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    
+}
+#contenido-body{
     font-family: 'Quicksand', sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
+    /*margin: 50px;*/
+}
+#contenido{
+    background-color: whitesmoke;
+    margin-top: 32px;
+    padding: 0;
+}
+#form-contacto{
+    height: 50px;
+    background: #FFAFBD;
+}
+.nombre{
+    color: #7474BF;
+    margin-right: 300px;
+}
+.titulo{
+    font-size: var(--lg);
+}
+.titulos{
+    color: #FFAFBD;
+    font-size: var(--xlg);
+}
+.subtitulos{
+    font-size: var(--lg);
 }
 
-header{
-    color: whitesmoke;
-    display: grid;
-    place-items: center;
-
+.ocultar{
+    color: royalblue;
+    text-decoration: none;
+}
+img{
+    border: 5px solid white;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-section{
-    float: left;
+@media (max-width: 640px){
+
 }
-
-article{
-}
-
-.foto{
-    width: 200px;
-    border: 1px solid white;
-    border-radius: 20px;
-    float: right;
-    margin-left: 50px;
-}
-
-.descripcion{
-    width: 200px;
-    height: 200px;
-    justify-self: left;
-}
-
-
-
-
-
-
-#gradiente{
-    background: #FFEFBA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
